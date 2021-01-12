@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(/images/background.png) no-repeat center center fixed;
+  background-size: cover;
+}
+.download {
+  background: transparent;
+  margin-bottom: 2em;
+  margin-left: 3px;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5000px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 127px;
+  width: 75px;
+  font-size: 1rem;
+}
+.download1{
+  background: transparent;
+  margin-bottom: 2em;
+  margin-left: 170px;
+  border: none;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5000px;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 127px;
+  width: 75px;
+  font-size: 1rem;
+}
+.download:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.download1:hover{
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.download:active {
+  background: rgba(255, 255, 255, 0.2);
+}
+/*for glassmorphism*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card{
+    height: 462px;
+    width: 300px;
+    background-color: rgba(255,255,255,0.06);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 565px;
+    bottom: 0;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 20px 20px 22px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    font-family: 'Poppins',sans-serif;
+    color: #fcfcfc;
+}
+h4{
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    margin: 25px 0 10px 0;
+}
+h6{
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 15px;
+    letter-spacing: 5px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.card img{
+    width: 100%;
+    
+}
+h1{
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+}
+.container-2{
+    width: 70%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+}
+.details{
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+.details span{
+    color: #b3b3b3;
+}
+.details:first-child{
+    border-right: 2px solid #fcfcfc;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Grabber</title>
+<link rel="stylesheet" href="/stylesheets/button.css">
+<link rel="stylesheet" href="/stylesheets/card.css">
+<link rel="stylesheet" href="/stylesheets/navbar.css">
+<link rel="stylesheet" href="/stylesheets/slideshow.css">
+<link rel="stylesheet" href="/stylesheets/about.css">
+</head>
+<body>
+<div class="home">
+<div id="navbar">
+  <b><a class="active" href="">Grabber</a></b>
+  <a class="abou">About</a>
+  <a href="https://wa.me/916291171004">Contact</a>
+</div>
+<div class="container_search">
+      <form action="javascript:Search()">
+        <p>Grabber</p>
+        <input type="search" id="search" placeholder="Enter Query"><br>
+        <button class="switch">Search</button><br>
+      </form>
+      <div class="drops">
+        <div class="drop drop-1"></div>
+        <div class="drop drop-2"></div>
+        <div class="drop drop-3"></div>
+        <div class="drop drop-4"></div>
+        <div class="drop drop-5"></div>
+      </div>
+</div> 
+<div class="slideshow-container">
+ <!--<div class="card mySlides fade">
+        <h4>Glassmorphism Weather Card UI | CSS Glassmorphism Tutorial</h4>
+        <img src="http://i3.ytimg.com/vi/D97Kq3uZUeM/maxresdefault.jpg" alt="icon">
+        <div class="container-2">
+            <div>
+                <button class="download">Audio</button>
+            </div>
+            <div>
+                <button class="download1">Video</button>
+            </div>
+        </div>
+    </div>-->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+</div>
+<!--about-->
+<div class="about">
+<div id="navbar">
+  <b><a class="hom" href="">Grabber</a></b>
+  <a class="active">About</a>
+  <a href="">Contact</a>
+</div>
+  <div class="card1">
+       <div class="card1-img">
+          <img src="/images/profile-picture.jpg" alt="profile">  
+       </div>
+       <div class="desc">
+          <h6 class="primary-text">Bijit Mondal</h6>
+          <h6 class="secondary-text">A Coder At Early Stage</h6>
+       </div>
+       <button class="primary-text">View Profile</button>
+       <div class="details">
+          <div class="rating">
+             <h6 class="primary-text">86%</h6>
+             <h6 class="secondary-text">Rating</h6>
+          </div>
+          <div class="activity">
+             <h6 class="primary-text">92%</h6>
+             <h6 class="secondary-text">Activity</h6>
+          </div>
+       </div>
+    </div>
+</div>
+<script src="/javascripts/script.js"></script>
+<script type="text/javascript">
+  var display = document.querySelector('.container_search');
+  var switching = document.querySelector('.switch');
+  var slide = document.querySelector('.result');
+  var onButtonClick = function () {
+    display.style.display="none";
+    slide.style.display="block";
+  };
+  switching.addEventListener("click",onButtonClick);
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+<script type="text/javascript">
+  //switching between home and about
+  var home = document.querySelector('.home');
+  var about = document.querySelector('.about');
+  var hom = document.querySelector('.hom');
+  var abou = document.querySelector('.abou');
+  function hm(){
+    home.style.display="block";
+    about.style.display="none";
+  }
+  hom.addEventListener("click",hm);
+  function ab(){
+    home.style.display="none";
+    about.style.display="block";
+  }
+  abou.addEventListener("click",ab);
+</script>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
