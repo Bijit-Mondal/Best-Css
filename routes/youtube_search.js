@@ -94,7 +94,7 @@ router.get('/download/video/:vid/:name?', (req,res,next)=>{
     /*Perfect CODE  */
     try {
             /* response attachment for triggering download instead of stream */
-            res.attachment(`${name}.m4a`);
+            res.attachment(`${name}.mp4`);
 
             /*Downloading ,Converting mp4 youtube video using video_id  */
             const ytdl = spawn('youtube-dl', [
