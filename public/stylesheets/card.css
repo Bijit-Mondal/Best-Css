@@ -4,7 +4,6 @@ body {
  -moz-background-size: cover;
  -o-background-size: cover;
  background-size: cover;
-  position: absolute;
   top: calc(50% - 20px);
   left: calc(50% - 20px);
   width: 40px;
