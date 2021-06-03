@@ -5,7 +5,6 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  position: absolute;
   top: calc(50% - 150px);
   left: calc(50% - 150px);
   width: 300px;
